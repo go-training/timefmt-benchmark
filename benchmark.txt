@@ -1,0 +1,94 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/go-training/timefmt-benchmark
+cpu: Intel(R) Core(TM) i5-4278U CPU @ 2.60GHz
+BenchmarkStdTimeFormat
+BenchmarkStdTimeFormat-4   	 6375416	       165.2 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 7053469	       165.1 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 7126417	       165.2 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 7038474	       168.1 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 6982786	       165.2 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 6950660	       165.9 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 7145748	       173.5 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 6872494	       169.0 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 7132108	       187.0 ns/op	      16 B/op	       1 allocs/op
+BenchmarkStdTimeFormat-4   	 6737296	       164.5 ns/op	      16 B/op	       1 allocs/op
+BenchmarkImperfectgo
+BenchmarkImperfectgo-4     	 7957006	       144.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8891265	       138.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8875951	       134.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8600679	       131.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8921299	       134.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8844925	       133.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8714475	       131.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8781253	       136.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8582221	       131.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkImperfectgo-4     	 8778960	       131.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny
+BenchmarkItchyny-4         	12087447	        94.90 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	12119613	        95.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11775958	        95.18 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11989761	        96.09 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11997177	        95.28 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11719690	        95.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11539092	        98.33 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11820135	        96.83 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11961039	        97.78 ns/op	       0 B/op	       0 allocs/op
+BenchmarkItchyny-4         	11854338	       102.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy
+BenchmarkAppleboy-4        	15491853	        73.81 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	14987839	        75.45 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	15307543	        73.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	15345555	        74.50 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	14981792	        73.94 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	15563818	        75.74 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	14690113	        73.78 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	15215715	        73.85 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	14765252	        76.18 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAppleboy-4        	14573054	        74.17 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFastly
+BenchmarkFastly-4          	 6842655	       171.0 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6891577	       170.7 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6798316	       170.2 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6764784	       170.9 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6919987	       170.1 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6867831	       171.0 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6738858	       171.9 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6467365	       170.9 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6810228	       176.0 ns/op	      16 B/op	       1 allocs/op
+BenchmarkFastly-4          	 6863013	       173.8 ns/op	      16 B/op	       1 allocs/op
+BenchmarkJehiah
+BenchmarkJehiah-4          	 2385453	       491.6 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2446784	       490.4 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2349438	       507.2 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2469285	       491.3 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2441116	       500.4 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2450582	       489.5 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2432955	       498.3 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2449663	       494.2 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2421250	       500.9 ns/op	      48 B/op	       6 allocs/op
+BenchmarkJehiah-4          	 2178816	       490.7 ns/op	      48 B/op	       6 allocs/op
+BenchmarkLestrrat
+BenchmarkLestrrat-4        	 5513318	       213.3 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5318871	       212.9 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5559402	       211.4 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5542640	       213.5 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5452542	       213.3 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5449182	       213.0 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5449760	       214.5 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5532214	       215.2 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5490631	       213.4 ns/op	      80 B/op	       2 allocs/op
+BenchmarkLestrrat-4        	 5524072	       212.7 ns/op	      80 B/op	       2 allocs/op
+BenchmarkTebeka
+BenchmarkTebeka-4          	 1000000	      1100 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	  906591	      1106 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1091895	      1138 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1100698	      1090 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1000000	      1098 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1097500	      1117 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1058562	      1155 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1034335	      1112 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1104452	      1084 ns/op	      64 B/op	       7 allocs/op
+BenchmarkTebeka-4          	 1106731	      1084 ns/op	      64 B/op	       7 allocs/op
+PASS
+ok  	github.com/go-training/timefmt-benchmark	116.481s

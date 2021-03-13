@@ -4,6 +4,7 @@ import (
 	"testing"
 	"time"
 
+	appleboy "github.com/appleboy/timefmt-go"
 	fastly "github.com/fastly/go-utils/strftime"
 	imperfectgo "github.com/imperfectgo/go-strftime"
 	itchyny "github.com/itchyny/timefmt-go"
@@ -40,6 +41,14 @@ func BenchmarkItchyny(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_ = itchyny.Format(now, layout)
+	}
+}
+
+func BenchmarkAppleboy(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		_ = appleboy.Format(now, layout)
 	}
 }
 
