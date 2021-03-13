@@ -20,36 +20,48 @@ const (
 )
 
 func BenchmarkStdTimeFormat(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_ = now.Format(layoutString)
 	}
 }
 
 func BenchmarkImperfectgo(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_ = imperfectgo.Format(now, layout)
 	}
 }
 
 func BenchmarkItchyny(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_ = itchyny.Format(now, layout)
 	}
 }
 
 func BenchmarkFastly(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_ = fastly.Strftime(layout, now)
 	}
 }
 
 func BenchmarkJehiah(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_ = jehiah.Format(layout, now)
 	}
 }
 
 func BenchmarkLestrrat(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
 	f, _ := lestrrat.New(layout)
 	for i := 0; i < b.N; i++ {
 		_ = f.FormatString(now)
@@ -57,6 +69,8 @@ func BenchmarkLestrrat(b *testing.B) {
 }
 
 func BenchmarkTebeka(b *testing.B) {
+	b.ReportAllocs()
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_, _ = tebeka.Format(layout, now)
 	}
